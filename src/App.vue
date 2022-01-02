@@ -1,25 +1,36 @@
 <template>
-  <div id="app">
-    <RegisterForm />
-  </div>
+<div>
+  <h1 class="brand">MySolicitor Calculator</h1>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <Form/>
+</div>
 </template>
 
 <script>
-import RegisterForm from './components/RegisterForm.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Form from './components/Form.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    RegisterForm
+    // HelloWorld,
+    Form
   }
 }
 </script>
 
-<style lang="scss">
-  @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+.brand{
+  font-size:6rem;
+  color:#0a043b;
+}
 </style>
