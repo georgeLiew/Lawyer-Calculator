@@ -2,20 +2,21 @@
 <div>
   <h1 class="brand">MySolicitor Calculator</h1>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <Form/>
+  <div class="nav">
+    <router-link to="/">Go to Home</router-link>
+    <router-link to="/legalfeecalc">Legal Fee Calc</router-link>
+     <router-link to="/othercalc">Other Calc</router-link>
+  </div>
   <router-view></router-view>
 </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Form from './components/Form.vue'
-
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    Form
   }
 }
 </script>
