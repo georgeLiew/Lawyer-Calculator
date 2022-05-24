@@ -3,6 +3,7 @@
   <h1 class="brand">MySolicitor Calculator</h1>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Form/>
+  <router-view></router-view>
 </div>
 </template>
 
