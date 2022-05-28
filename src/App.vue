@@ -1,12 +1,13 @@
 <template>
-<div>
-  <h1 class="brand">MySolicitor Calculator</h1>
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <div class="nav">
-    <router-link to="/">Go to Home</router-link>
-    <router-link to="/legalfeecalc">Legal Fee Calc</router-link>
-     <router-link to="/othercalc">Other Calc</router-link>
+    <router-link class="item" to="/">Home</router-link>
+    <router-link class="item" to="/legalfeecalc">Legal Fee Calc</router-link>
+     <router-link class="item" to="/othercalc">Other Calc</router-link>
   </div>
+<div class="body"> 
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+
+
   <router-view></router-view>
 </div>
 </template>
@@ -22,17 +23,46 @@ export default {
 </script>
 
 <style>
+body{
+  margin:0;
+
+}
+html, body {
+    height:100%; /*both html and body*/
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background:#6b5339;
 }
 
-.brand{
-  font-size:6rem;
-  color:#0a043b;
+.from_box{
+  background:#6a645e;
+  color:rgb(244, 224, 224);
+  display: block;
 }
+
+.nav{
+  padding:20px; 
+  width:100%;  
+  background:#131315; 
+  font-size: 20px;
+}
+
+.nav .item{
+  padding:10px; 
+  border :black 10px;
+  text-decoration: none;
+  min-width:100px;
+  color:#ae8465;
+}
+
+.nav .item:hover{
+  background:#ae8465;
+  color:#131315;
+}
+
 </style>

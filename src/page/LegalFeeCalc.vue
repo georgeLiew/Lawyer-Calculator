@@ -361,12 +361,6 @@ function kelantanTransferFee(purchasePrice) {
   width: 90%;
   margin: auto;
   border: 0.01rem solid gray;
-  display: flex;
-  flex-wrap: wrap;
-
-  .form-group {
-    width: 50%;
-  }
 }
 
 .form-group {
