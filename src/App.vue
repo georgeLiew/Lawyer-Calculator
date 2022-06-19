@@ -2,14 +2,9 @@
   <div class="nav">
     <router-link class="item" to="/">Home</router-link>
     <router-link class="item" to="/legalfeecalc">Legal Fee Calc</router-link>
-     <router-link class="item" to="/othercalc">Other Calc</router-link>
+    <router-link class="item" to="/othercalc">Other Calc</router-link>
   </div>
-<div class="body"> 
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-
-
   <router-view></router-view>
-</div>
 </template>
 
 <script>
@@ -25,7 +20,6 @@ export default {
 <style>
 body{
   margin:0;
-
 }
 html, body {
     height:100%; /*both html and body*/
@@ -37,6 +31,7 @@ html, body {
   text-align: center;
   color: #2c3e50;
   background:#6b5339;
+  height:100%;
 }
 
 .from_box{
@@ -47,7 +42,6 @@ html, body {
 
 .nav{
   padding:20px; 
-  width:100%;  
   background:#131315; 
   font-size: 20px;
 }

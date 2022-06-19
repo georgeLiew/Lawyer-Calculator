@@ -20,14 +20,14 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/banner.jpg");
 
   /* Set a specific height */
-  height: 100%;
+  height: 95%;
 
   /* Position and center the image to scale nicely on all screens */
+
+  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  min-height:500px;
 
 /* Place text in the middle of the image */
   .hero-text {
