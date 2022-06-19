@@ -21,7 +21,7 @@
 
   /* Set a specific height */
   height: 95%;
-
+  padding-top: 66%;
   /* Position and center the image to scale nicely on all screens */
 
   /* Center and scale the image nicely */

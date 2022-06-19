@@ -31,7 +31,7 @@ html, body {
   text-align: center;
   color: #2c3e50;
   background:#6b5339;
-  height:100%;
+  min-height:100%;
 }
 
 .from_box{
