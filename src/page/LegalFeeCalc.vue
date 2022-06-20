@@ -1,6 +1,6 @@
 <template>
+  <h1>Legal Fee Calculator <span>?</span></h1>
   <div class="from_box">
-    <h1>Legal Fee Calculator</h1>
     <div class="form-group">
       <inputNumber
         labelName="Property Purchase Price"
@@ -370,9 +370,26 @@ function kelantanTransferFee(purchasePrice) {
 .result {
   display: block;
   margin: 0 auto;
+  border:5px solid white;
+  border-radius: 10px;
 
   label {
     display: block;
+  }
+}
+
+h1{
+  padding: 0.5rem 1.5rem;
+  text-align: left;
+  background: white;
+  color: black;
+  
+  span {
+    text-align: right;
+    background: red;
+    color:white;
+    padding: 0.2rem 0.5rem;
+    float:right;
   }
 }
 </style>

@@ -80,6 +80,7 @@ export default {
     width: 100%;
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    text-align: ;
 
     label {
         width: 30%;
