@@ -1,6 +1,6 @@
 <template>
   <td>
-      {{NumberValue}} 
+      {{DisplayNumber}} 
   </td>
 </template>
 
@@ -8,7 +8,20 @@
 export default {
   name: 'TableColumnNumber',
   props: {
-    NumberValue: Number
+     NumberValue: {
+            type: Number,
+            default: 0,
+        },
+  },
+  computed: {
+    DisplayNumber(){
+        if (this.NumberValue !== '' && this.NumberValue !== undefined && this.NumberValue !== 0 
+           && this.NumberValue !== '0' && this.NumberValue !== null) {
+            return this.NumberValue.toString().replace(/^0+/, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        } else {
+            return this.NumberValue;
+        }
+    }
   }
  
 }

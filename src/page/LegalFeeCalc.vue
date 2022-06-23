@@ -8,38 +8,39 @@
         @updateValue="onPurchasePriceChange"
       ></inputNumber>
     </div>
-    <div class="result form-group">
-      <customLabelNumber
-        labelName="Property Purchase Price"
-        v-model="legalFee.purchasePrice"
-      ></customLabelNumber>
-      <customLabelNumber
-        labelName="Stamp duty"
-        v-model="legalFee.stampduty"
-      ></customLabelNumber>
-      <customLabelNumber
-        labelName="Caveat"
-        v-model="legalFee.stateFee.caveat_fee"
-      ></customLabelNumber>
-      <customLabelNumber
-        labelName="Withdrawl of Caveat"
-        v-model="legalFee.stateFee.Wcaveat_fee"
-      ></customLabelNumber>
-      <customLabelNumber
-        labelName="Registration Fee on Transfer at Land Office	"
-        v-model="legalFee.stateFee.transfer_fee"
-      ></customLabelNumber>
-      <customLabelNumber
-        labelName="Total Legal Fees Payable"
-        v-model="legalFee.legalFeeAmount"
-      ></customLabelNumber>
-    </div>
+    <table>      
+      <tr>
+        <TableColumnLabel labelName="Property Purchase Price" />
+        <TableColumnNumber v-model:NumberValue="legalFee.purchasePrice"></TableColumnNumber>
+      </tr>
+      <tr>
+        <TableColumnLabel labelName="Stamp duty" />
+        <TableColumnNumber v-model:NumberValue="legalFee.stampduty"></TableColumnNumber>
+      </tr>
+      <tr>
+        <TableColumnLabel labelName="Caveat" />
+        <TableColumnNumber v-model:NumberValue="legalFee.caveat_fee"></TableColumnNumber>
+      </tr>
+       <tr>
+        <TableColumnLabel labelName="Withdrawl of Caveat" />
+        <TableColumnNumber v-model:NumberValue="legalFee.Wcaveat_fee"></TableColumnNumber>
+      </tr>
+       <tr>
+        <TableColumnLabel labelName="Registration Fee on Transfer at Land Office" />
+        <TableColumnNumber v-model:NumberValue="legalFee.transfer_fee"></TableColumnNumber>
+      </tr>
+       <tr>
+        <TableColumnLabel labelName="Total Legal Fees Payable" />
+        <TableColumnNumber v-model:NumberValue="legalFee.legalFeeAmount"></TableColumnNumber>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
 import inputNumber from "../element/InputNumber.vue";
-import customLabelNumber from "../element/CustomLabelNumber.vue";
+import TableColumnLabel from "../element/TableColumnLabel.vue";
+import TableColumnNumber from "../element/TableColumnNumber.vue";
 
 export default {
   name: "Form",
@@ -76,7 +77,8 @@ export default {
   },
   components: {
     inputNumber,
-    customLabelNumber,
+    TableColumnLabel,
+    TableColumnNumber
   },
 };
 
